@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 		<link href="documentation.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<header>
+		<div id="wrapper">
 			<nav id="navbar">
-				<h3>
-				</h3>
-			<!-- text should correspond to .main-section, jump to section -->
-				<a id="nav-link"> link to main-section </a>
-				<a id="nav-link"> link to main-section </a>
-				<a id="nav-link"> link to main-section </a>
-				<a id="nav-link"> link to main-section </a>
-				<a id="nav-link"> link to main-section </a>
+				<div id="navitem">
+					<h3 id="navtitle"> Introduction to HTML </h3>
+					<hr>
+				<!-- text should correspond to .main-section, jump to section -->
+					<a id="nav-link" href="#1"> What is HTML? </a>
+					<hr>
+					<a id="nav-link"> link to main-section </a>
+					<hr>
+					<a id="nav-link"> link to main-section </a>
+					<hr>
+					<a id="nav-link"> link to main-section </a>
+					<hr>
+					<a id="nav-link"> link to main-section </a>
+					<hr>
+				<div>
 			</nav>
-		</header>
-		<main id="main-doc">
-		<!-- 5 list items total -->
-			<div id="section-div">
-				<section class="main-section">
-					<h2></h2>
-					<code> 
-						&lt;p> Hello, World! &lt;/p>
-					</code>
-				</section>
-				<section class="main-section">
-					<h2></h2>
-					<code></code>
-				</section>
-				<section class="main-section">
-					<h2></h2>
-					<code></code>
-				</section>
-				<section class="main-section">
-					<h2></h2>
-					<code></code>
-				</section>
-				<section class="main-section">
-					<h2></h2>
-					<code></code>
-				</section>
-			</div>
-		</main>
+
+			<main id="main-doc">
+			<!-- 5 list items total -->
+				<div id="section-div">
+					<div id="sdiv2">
+						<section class="main-section">
+							<h2 id="1" class="s-title"> What is HTML?</h2>
+							<p class="s-content"> HTML stands for Hypertext Markup Language. The purpose of this language is to determine the layout and content of your page
+								while CSS is used to style it. Think of it as the skeleton of your page.
+							</p>
+							<br>
+							<p class="s-content"> There are many elements that you can write in html, but keep in mind the purpose of these is to determine the layout, not style. For example,
+								you wouldn't want to use the <code> &lt;h1></code> element for a title just because it has a big font size, rather you'd use it to mark where your title will go. </p>
+							<code> 
+								&lt;p> Hello, World! &lt;/p>
+							</code>
+						</section>
+						<section class="main-section">
+							<h2></h2>
+							<code></code>
+						</section>
+						<section class="main-section">
+							<h2></h2>
+							<code></code>
+						</section>
+						<section class="main-section">
+							<h2></h2>
+							<code></code>
+						</section>
+						<section class="main-section">
+							<h2></h2>
+							<code></code>
+						</section>
+					<div>
+				</div>
+			</main>
+		<div>
 	</body>
 </html>
