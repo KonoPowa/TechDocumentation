@@ -1,0 +1,101 @@
+code{
+	background-color: grey;
+	color:black;
+}
+
+@media screen and (max-width: 992px){
+	#navbar{
+		position: static;
+		float: none;
+		display: block;
+		
+	}
+	
+	
+	
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	max-width: 100%;
+}
+
+#navtitle{
+	text-align: center;
+}
+
+body{
+	background-color: grey;
+	
+}
+
+#wrapper{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+#navbar{
+	position: fixed;
+	height: 100vh;
+	width: 20vw;
+	background-color: white;
+	float: left;
+}
+
+#navitem{
+	float: none;
+	height: 100%;
+	width: 100%;
+}
+
+#navtitle{
+	margin-top: 4%;
+	font-size: 30px;
+}
+
+hr{
+	margin: 2vh auto;
+	overflow: none;
+	display: block;
+	width: 70%;
+	border: 1px solid grey;
+}
+
+	
+#nav-link{
+	font-size: 20px;
+	display: block;
+	text-align: center;
+}
+	
+#section-div{
+	float: right;
+	width: 79.5%;
+	height: 120vh;
+	background-color: white;
+	border-left: 10px solid grey;
+}
+
+#sdiv2{
+	float: none;
+	display: block;
+	width: 100%;
+	height: 1%;
+}
+
+.s-title{
+	font-size: 30px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	margin-top: 3%;
+}
+
+.s-content{
+	color: #575757;
+	font-size: 18px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
