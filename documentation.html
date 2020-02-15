@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 		<link href="documentation.css" rel="stylesheet" type="text/css">
@@ -13,13 +13,13 @@
 				<!-- text should correspond to .main-section, jump to section -->
 					<a id="nav-link" href="#1"> What is HTML? </a>
 					<hr>
-					<a id="nav-link"> link to main-section </a>
+					<a id="nav-link" href="#2"> Getting Started </a>
 					<hr>
-					<a id="nav-link"> link to main-section </a>
+					<a id="nav-link" href="#3"> Headers </a>
 					<hr>
-					<a id="nav-link"> link to main-section </a>
+					<a id="nav-link" href="#4"> Page Content </a>
 					<hr>
-					<a id="nav-link"> link to main-section </a>
+					<a id="nav-link" href="#5"> link to main-section </a>
 					<hr>
 				<div>
 			</nav>
@@ -36,23 +36,77 @@
 							<br>
 							<p class="s-content"> There are many elements that you can write in html, but keep in mind the purpose of these is to determine the layout, not style. For example,
 								you wouldn't want to use the <code> &lt;h1></code> element for a title just because it has a big font size, rather you'd use it to mark where your title will go. </p>
-							<code> 
+							 <!--<code> 
 								&lt;p> Hello, World! &lt;/p>
-							</code>
+							</code> -->
 						</section>
 						<section class="main-section">
-							<h2></h2>
+							<h2 class="s-title" id="2">Getting Started</h2>
+							<p class="s-content">Let's start by declaring the document type with <code> &lt;!DOCTYPE html></code> . This lets the browser know what version of html you're running.
+								HTML5 (current HTML) will always have the same tag as shown. Then we'll follow up with the <code> &lt;html></code> , <code> &lt;head></code> , and <code> &lt;body></code>  elements. 
+								<code> &lt;html></code>  contains all HTML elements, 
+								<code> &lt;head></code>  contains data you wouldn't want to show on your main page such as font links, and <code> &lt;body></code>  contains your main content. All put together it'll look like this:
+							</p>
+							<div id="code1">
+								<code> 
+								&nbsp; &lt;!DOCTYPE html>
+								<br>
+								&nbsp; &lt;html>
+								<br>
+								&nbsp; &nbsp; &lt;head>
+								<br>
+								&nbsp; &nbsp; &lt;/head>
+								<br>
+								&nbsp; &nbsp; &lt;body>
+								<br>
+								&nbsp; &nbsp; &lt;/body>
+								<br>
+								&nbsp; &lt;/html>
+								</code>
+							</div>
+							<p class="s-content" style="margin-top: 30px;"> Remember to always use the closing tags (tag with slash) as shown above. There are some exceptions, these are known as self closing tags, but we'll get there later. </p>
+						</section>
+						<section class="main-section" id="3">
+							<h2 class="s-title"> Headers </h2>
+							<p class="s-content"> Header elements are used to mark where a title will go. <code>&lt;h1></code> is typically used as the main page title. There should only be one <code>&lt;h1></code> element.
+								<code>&lt;h2></code> through <code>&lt;h6></code> are used in titles below the page title such as article headings.
+							<br>
+							<br>
+								Lets use these headers in an example. First, we'll use the <code>&lt;h1></code> element for the page title, and then we'll use <code>&lt;h2></code> to title an article below.
+							</p>
+							<div id="code1" style="height: 195px;">
+								<code>
+								&nbsp; &lt;!DOCTYPE html>
+								<br>
+								&nbsp; &lt;html>
+								<br>
+								&nbsp; &nbsp; &lt;head>
+								<br>
+								&nbsp; &nbsp; &lt;/head>
+								<br>
+								&nbsp; &nbsp; &lt;body>
+								<br>
+								&nbsp; &nbsp; &nbsp; &lt;header>
+								<br>
+								&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1> <nobr> <i style="color: black;"> HTML Introduction </i> </nobr> &lt;/h1>
+								<br>
+								&nbsp; &nbsp; &nbsp; &lt;/header>
+								<br>
+								&nbsp; &nbsp; &lt;/body>
+								<br>
+								&nbsp; &lt;/html>
+								</code>
+								</code>
+							</div>
+							
+						</section>
+						<section class="main-section" id="4">
+							<h2 class="s-title"> Page Content </h2>
+							<p class="s-content"> Now that we've finished laying out the formalities we can start adding content to the page. For now, I'll show you how to add text and images. For text that isn't a title of some sort,
+								you'll want to use the paragraph element, written as <code>&lt;p></code>.
 							<code></code>
 						</section>
-						<section class="main-section">
-							<h2></h2>
-							<code></code>
-						</section>
-						<section class="main-section">
-							<h2></h2>
-							<code></code>
-						</section>
-						<section class="main-section">
+						<section class="main-section" id="5">
 							<h2></h2>
 							<code></code>
 						</section>
