@@ -8,18 +8,22 @@
 		<div id="wrapper">
 			<nav id="navbar">
 				<div id="navitem">
-					<h3 id="navtitle"> Introduction to HTML </h3>
+					<header>
+						<h3 id="navtitle"> Introduction to HTML </h3>
+					</header>
 					<hr>
 				<!-- text should correspond to .main-section, jump to section -->
-					<a id="nav-link" href="#1"> What is HTML? </a>
+					<a class="nav-link" href="#What_is_HTML?"> What is HTML? </a>
 					<hr>
-					<a id="nav-link" href="#2"> Getting Started </a>
+					<a class="nav-link" href="#Getting_Started"> Getting Started </a>
 					<hr>
-					<a id="nav-link" href="#3"> Headers </a>
+					<a class="nav-link" href="#Headers"> Headers </a>
 					<hr>
-					<a id="nav-link" href="#4"> Page Content </a>
+					<a class="nav-link" href="#Page_Content"> Page Content </a>
 					<hr>
-					<a id="nav-link" href="#5"> link to main-section </a>
+					<a class="nav-link" href="#Divs_and_CSS"> Divs and CSS </a>
+					<hr>
+					<a class="nav-link" href="#Conclusion"> Conclusion </a>
 					<hr>
 				<div>
 			</nav>
@@ -28,8 +32,10 @@
 			<!-- 5 list items total -->
 				<div id="section-div">
 					<div id="sdiv2">
-						<section class="main-section">
-							<h2 id="1" class="s-title"> What is HTML?</h2>
+						<section class="main-section" id="What_is_HTML?">
+							<header>
+								<h2 id="1" class="s-title"> What is HTML?</h2>
+							</header>
 							<p class="s-content"> HTML stands for Hypertext Markup Language. The purpose of this language is to determine the layout and content of your page
 								while CSS is used to style it. Think of it as the skeleton of your page.
 							</p>
@@ -40,8 +46,10 @@
 								&lt;p> Hello, World! &lt;/p>
 							</code> -->
 						</section>
-						<section class="main-section">
-							<h2 class="s-title" id="2">Getting Started</h2>
+						<section class="main-section" id="Getting_Started">
+							<header>
+								<h2 class="s-title" id="2">Getting Started</h2>
+							</header>
 							<p class="s-content">Let's start by declaring the document type with <code> &lt;!DOCTYPE html></code> . This lets the browser know what version of html you're running.
 								HTML5 (current HTML) will always have the same tag as shown. Then we'll follow up with the <code> &lt;html></code> , <code> &lt;head></code> , and <code> &lt;body></code>  elements. 
 								<code> &lt;html></code>  contains all HTML elements, 
@@ -66,12 +74,15 @@
 							</div>
 							<p class="s-content" style="margin-top: 30px;"> Remember to always use the closing tags (tag with slash) as shown above. There are some exceptions, these are known as self closing tags, but we'll get there later. </p>
 						</section>
-						<section class="main-section" id="3">
-							<h2 class="s-title"> Headers </h2>
+						<section class="main-section" id="Headers">
+							<header>
+								<h2 class="s-title" id="3"> Headers </h2>
+							</header>
 							<p class="s-content"> Header elements are used to mark where a title will go. <code>&lt;h1></code> is typically used as the main page title. There should only be one <code>&lt;h1></code> element.
-								<code>&lt;h2></code> through <code>&lt;h6></code> are used in titles below the page title such as article headings.
+								<code>&lt;h2></code> through <code>&lt;h6></code> are used in titles below the page title such as article headings. All introductory information such as titles or navbars will go in the
+								<code>&lt;header></code> tags. </p>
 							<br>
-							<br>
+							<p class="s-content">
 								Lets use these headers in an example. First, we'll use the <code>&lt;h1></code> element for the page title, and then we'll use <code>&lt;h2></code> to title an article below.
 							</p>
 							<div id="code1" style="height: 195px;">
@@ -100,15 +111,51 @@
 							</div>
 							
 						</section>
-						<section class="main-section" id="4">
-							<h2 class="s-title"> Page Content </h2>
+						<section class="main-section" id="Page_Content">
+							<header>
+								<h2 class="s-title" id="4"> Page Content </h2>
+							</header>
 							<p class="s-content"> Now that we've finished laying out the formalities we can start adding content to the page. For now, I'll show you how to add text and images. For text that isn't a title of some sort,
-								you'll want to use the paragraph element, written as <code>&lt;p></code>.
-							<code></code>
+								you'll want to use the paragraph element, written as <code>&lt;p></code>. For images, you'll use the self closing tag <code>&lt;img></code>. </p>
+							<br>
+							<p class="s-content">
+							The paragraph element is used in the same way as the header elements. However, <code>&lt;img></code> is different. To use it, you'll have to add a href attribute, aka a hypertext reference.
+							It'll look like this: <code>&lt;img href="#"></code>. The # is a placeholder, but that's where your link will go. If it's a photo on your computer, you'll want to add it to the same folder as your 
+							other webpage files. The folder with all your webpage content and files is known as the root folder. When you add it to the folder, you'll simply type the file name where the # is, including 
+							the file type at the end. For example, <code>&lt;img href="link to image"></code> or <code>&lt;img href="RootPic.png"></code>. </p>
 						</section>
-						<section class="main-section" id="5">
-							<h2></h2>
-							<code></code>
+						<section class="main-section" id="Divs_and_CSS">
+							<header>
+								<h2 class="s-title" id="5"> Divs and CSS </h2>
+							</header>
+							<p class="s-content"> After putting in your content, you'll probably be wondering about how to style it by changing fonts, sizes, etc. This is where CSS comes into play, but we'll talk about it a bit later.
+								It's better to understand HTML before moving on to styling. However, I did want to give a little explanation of css and divs without diving into it. </p>
+								<br>
+								<p class="s-content">
+								Let's start with divs. In VERY simple terms, div's essentially create a specific area for all elements nested within. Nesting an element means putting an element in an element. For example, 
+								<code>&lt;div>&lt;p> <i style="color: black;">Lorem Ipsum</i> &lt;/p>&lt;/div></code>. The large grey rectangles with code inside them that I wrote above are divs that I gave a height, width,
+								 and background color to. I gave it all those properties by using CSS.
+								</p>
+						</section>
+						<section class="main-section" id="Conclusion">
+							<header>
+								<h2 class="s-title" id="6"> Conclusion <h2>
+							</header>
+								<p class="s-content"> By now you should know how to use:
+								<br>
+								<br>
+									<ul class="s-content">
+										<li><code>&lt;!DOCTYPE html></code></li>
+										<li><code>&lt;html></code></li>
+										<li><code>&lt;head></code></li>
+										<li><code>&lt;body></code></li>
+										<li><code>&lt;h1></code> through <code>&lt;h6></code></li>
+										<li><code>&lt;header></code></li>
+										<li><code>&lt;p></code></li>
+										<li><code>&lt;img></code></li>
+									</ul>
+								</p>
+							</header>
 						</section>
 					<div>
 				</div>
